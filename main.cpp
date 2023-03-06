@@ -5,12 +5,12 @@
 #include "Player.h"
 
 int main(){
- Referee a;
+ Referee ref;
  Human b= Human("jeff");
  Computer c;
  Player*player1= &b;
  Player*player2=&c;
- Player*winner= a.refGame(player1,player2);
+ Player*winner= ref.refGame(player1,player2);
  if (winner== player1 || winner==player2){
 		std::cout << winner->name <<"\n";
  } else{
